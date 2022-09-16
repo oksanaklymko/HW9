@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: indianred;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 5px auto;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 5px auto;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.col {
+    width: 25%;
+    padding: 0 5px 10px;
+}
+
+.img-holder {
+    height: 200px;
+}
+
+.product-article {
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+}
+
+.product-holder {
+    display: block;
+}
+
+.img-holder {
+    padding-top: 20px;
+ }
+
+.product-description {
+    text-align: center;
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 5px;
+    transition: color ease-in-out 0.3s;
+}
+
+.product-description:hover {
+    color: dimgrey;
+}
+
+.text-holder {
+    color: black;
+}
+
+.price-holder {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0 0 20px;
+    padding: 5px;
+    text-align: start;
+}
+
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    padding: 0 10px;
+}
+
+.new-price {
+    color: red;
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    transition: color ease-in-out 0.2s;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: black;
+}
+.product-article.discont50:before {
+    content: "50%";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    display: block;
+}
+
+.product-article.discont20:before {
+    content: "20%";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: red;
+    padding: 2px 4px;
+    display: block;
+}
+
+.product-article.discont15:before {
+    content: "15%";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: white;
+    padding: 2px 4px;
+    display: block;
+}
+
+.product-article.discont30:before {
+    content: "30%";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: black;
+    padding: 2px 4px;
+    display: block;
+}
