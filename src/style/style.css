@@ -40,7 +40,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 .col {
@@ -62,8 +61,12 @@ img {
 
 .product-holder {
     display: block;
+    transition: transform ease-in-out 0.3s;
 }
 
+.product-holder:hover {
+    transform: scale(1.04);
+}
 .product-description {
     text-align: center;
     color: black;
