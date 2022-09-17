@@ -50,6 +50,7 @@ img {
 
 .img-holder {
     height: 200px;
+    padding: 20px 40px;
 }
 
 .product-article {
@@ -62,10 +63,6 @@ img {
 .product-holder {
     display: block;
 }
-
-.img-holder {
-    padding-top: 20px;
- }
 
 .product-description {
     text-align: center;
@@ -97,7 +94,7 @@ img {
 .old-price {
     color: gray;
     text-decoration: line-through;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
 .new-price {
@@ -162,3 +159,27 @@ img {
     padding: 2px 4px;
     display: block;
 }
+
+/*.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}*/
