@@ -23,7 +23,7 @@ h3 {
     font-size: 16px;
     font-weight: 600;
     line-height: 100%;
-    padding: 5px auto;
+    padding: 5px;
 }
 img {
     max-width: 100%;
@@ -52,6 +52,28 @@ img {
     padding: 20px 40px;
 }
 
+.img-holder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+    backface-visibility: hidden;
+}
+
+.img-holder:hover .img-defalt {
+    transform: rotateY(-180deg);
+    backface-visibility: visible;
+}
+
+.img-holder:hover .img-hover {
+    transform: rotateY(180deg);
+}
+
+.img-hover {
+    transform: rotateY(-180deg);
+}
+
+
 .product-article {
     border: 1px solid darkgrey;
     border-radius: 4px;
@@ -64,9 +86,9 @@ img {
     transition: transform ease-in-out 0.3s;
 }
 
-.product-holder:hover {
+/*.product-holder:hover {
     transform: scale(1.04);
-}
+}*/
 .product-description {
     text-align: center;
     color: black;
